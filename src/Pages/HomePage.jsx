@@ -56,7 +56,14 @@ export default function HomePage() {
               ))}
             </NativeSelect>
           </FormControl>
-          <Button variant="contained" sx={{ width: "26%" }}>
+          <Button
+            variant="contained"
+            sx={{
+              width: "26%",
+              backgroundColor: "#2E4F21",
+              borderRadius: "25px",
+            }}
+          >
             조회하기
           </Button>
         </FormWrap>

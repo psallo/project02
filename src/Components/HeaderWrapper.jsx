@@ -11,7 +11,7 @@ export default function HeaderWrapper() {
           to="/"
           sx={{
             textDecoration: "none", // 언더라인 제거
-            color: "#2E4F21", // 부모 색상 사용
+            color: "inherit", // 부모 색상 사용
             "&:hover": {
               cursor: "pointer",
               textDecoration: "none",
@@ -28,7 +28,7 @@ export default function HeaderWrapper() {
           to="/about"
           sx={{
             textDecoration: "none", // 언더라인 제거
-            color: "#2E4F21", // 부모 색상 사용
+            color: "inherit", // 부모 색상 사용
             "&:hover": {
               cursor: "pointer",
               textDecoration: "none",
@@ -53,5 +53,9 @@ const HeaderRoot = styled.div`
   margin: auto;
 `;
 
-const HeaderWrap1 = styled.div``;
-const HeaderWrap2 = styled.div``;
+const HeaderWrap1 = styled.div`
+  margin-left: 2em;
+`;
+const HeaderWrap2 = styled.div`
+  margin-right: 2em;
+`;
