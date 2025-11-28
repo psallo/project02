@@ -4,8 +4,9 @@ import {
   InputLabel,
   NativeSelect,
   Button,
-} from "@mui/material";
-import styled from "@emotion/styled";
+} from "@mui/material"
+import { Link } from "react-router-dom"
+import styled from "@emotion/styled"
 
 export default function HomePage() {
   return (
@@ -78,6 +79,8 @@ export default function HomePage() {
               </NativeSelect>
             </FormControl>
             <Button
+              component={Link}
+              to="/result"
               variant="contained"
               sx={{
                 width: "26%",
@@ -104,7 +107,7 @@ export default function HomePage() {
         </MapWrap>
       </MapWrapper>
     </Container>
-  );
+  )
 }
 
 const Container = styled.div`
@@ -115,31 +118,31 @@ const Container = styled.div`
   @media (max-width: 780px) {
     flex-direction: column;
   }
-`;
+`
 const SearchWrapper = styled.div`
   width: 100%;
-`;
+`
 const ContentWrap = styled.section`
   margin-top: 3em;
   padding: 2em;
-`;
+`
 const FormWrap = styled.div`
   padding: 2em;
-`;
+`
 const SelectForm = styled.div`
   margin-bottom: 2em;
-`;
+`
 const SearchForm = styled.div`
   display: flex;
   justify-content: space-between;
-`;
+`
 const MapWrapper = styled.div`
   width: 100%;
-`;
+`
 const MapWrap = styled.div`
   margin-top: 3em;
   padding: 2em;
-`;
+`
 
 const guList = [
   { value: "0", label: "구를 선택하세요" },
@@ -168,7 +171,7 @@ const guList = [
   { value: "23", label: "종로구" },
   { value: "24", label: "중구" },
   { value: "25", label: "중랑구" },
-];
+]
 
 const dongList = [
   { value: "1", label: "동을 선택하세요" },
@@ -189,7 +192,7 @@ const dongList = [
   { value: "150", label: "응봉동" },
   { value: "160", label: "행당1동" },
   { value: "170", label: "행당2동" },
-];
+]
 
 const categoryList = [
   { value: "2", label: "업종을 선택하세요" },
@@ -255,4 +258,4 @@ const categoryList = [
   { value: "bh", label: "화장품" },
   { value: "bi", label: "화초" },
   { value: "bj", label: "PC방" },
-];
+]
